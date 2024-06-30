@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <style>
+        #chatContainer {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #messagesContainer {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 300px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+        }
+        #userInput {
+            width: calc(100% - 80px);
+        }
+        #sendButton {
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="chatContainer">
+        <div id="messagesContainer"></div>
+        <input type="text" id="userInput" placeholder="Type your message here...">
+        <button id="sendButton">Send</button>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+</html>
